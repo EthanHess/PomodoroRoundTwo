@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit; 
 
+static NSString * const currentRoundNotification = @"currentRoundNotification";
+static NSString * const secondTickNotification = @"secondTickNotification";
+static NSString * const selectedRound = @"selectedRoundNotification";
+static NSString * const timerEnded = @"timerEnded";
+static NSString * const timerStarted = @"timerStarted";
+static NSString * const appStarted = @"appStarted";
 
 @interface Timer : NSObject
 

@@ -29,7 +29,7 @@
     
     self.currentRound = 0;
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(roundComplete) name:@"timerEnded" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(roundComplete) name:timerEnded object:nil];
     
 }
 
@@ -81,7 +81,7 @@
     
     timer.seconds = 0;
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"currentRoundSelected" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:currentRoundNotification object:nil];
     
 }
 
