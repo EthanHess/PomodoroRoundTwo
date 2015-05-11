@@ -21,6 +21,10 @@ static NSString * const appStarted = @"appStarted";
 @property (nonatomic, assign) NSInteger minutes;
 @property (nonatomic, assign) NSInteger seconds;
 
-+ (Timer *)sharedInstance; 
++ (Timer *)sharedInstance;
+
+- (void)startTimer:(id)sender;
+
+- (void)pauseTimer:(id)sender;
 
 @end

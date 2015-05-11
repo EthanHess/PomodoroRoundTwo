@@ -31,7 +31,7 @@
 
 - (void)registerForNotifications {
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cancelTimer) name:timerEnded object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cancelTimer) name:timerStarted object:nil];
     
 }
 

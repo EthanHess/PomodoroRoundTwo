@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Timer.h"
 
 @interface TimerViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UIButton *pauseButton;
+@property (nonatomic, strong) Timer *timer;
 
 @end
