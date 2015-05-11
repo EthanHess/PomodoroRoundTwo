@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RoundsViewController : UIViewController
+@interface RoundsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, assign) NSInteger currentRound;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
