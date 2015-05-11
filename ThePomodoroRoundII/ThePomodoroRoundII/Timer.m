@@ -37,18 +37,19 @@
 
 - (void)startTimer:(id)sender {
     
-    if (self.isOn == YES) {
-        [self decreaseSecond];
-        
-        [self performSelector:@selector(isActive) withObject:nil afterDelay:.001];
-    }
+    self.isOn = YES;
+    [self isActive];
+    
     
 }
 
 - (void)isActive {
     
-    self.isOn = YES;
-    [self isActive];
+    if (self.isOn == YES) {
+        [self decreaseSecond];
+        
+        [self performSelector:@selector(isActive) withObject:nil afterDelay:.001];
+    }
     
 }
 

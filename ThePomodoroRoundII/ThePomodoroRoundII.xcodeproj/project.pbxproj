@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		27D4259C1B0127AE0099F224 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4259B1B0127AE0099F224 /* main.m */; };
 		27D4259F1B0127AE0099F224 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4259E1B0127AE0099F224 /* AppDelegate.m */; };
-		27D425A21B0127AE0099F224 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D425A11B0127AE0099F224 /* ViewController.m */; };
 		27D425A71B0127AE0099F224 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D425A61B0127AE0099F224 /* Images.xcassets */; };
 		27D425AA1B0127AE0099F224 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D425A81B0127AE0099F224 /* LaunchScreen.xib */; };
 		27D425B61B0127AE0099F224 /* ThePomodoroRoundIITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D425B51B0127AE0099F224 /* ThePomodoroRoundIITests.m */; };
@@ -35,8 +34,6 @@
 		27D4259B1B0127AE0099F224 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27D4259D1B0127AE0099F224 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27D4259E1B0127AE0099F224 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		27D425A01B0127AE0099F224 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		27D425A11B0127AE0099F224 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		27D425A61B0127AE0099F224 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		27D425A91B0127AE0099F224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		27D425AF1B0127AE0099F224 /* ThePomodoroRoundIITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThePomodoroRoundIITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,8 +89,6 @@
 			children = (
 				27D4259D1B0127AE0099F224 /* AppDelegate.h */,
 				27D4259E1B0127AE0099F224 /* AppDelegate.m */,
-				27D425A01B0127AE0099F224 /* ViewController.h */,
-				27D425A11B0127AE0099F224 /* ViewController.m */,
 				27D425C71B01290C0099F224 /* RoundsViewController.h */,
 				27D425C81B01290C0099F224 /* RoundsViewController.m */,
 				27D425C21B0128C10099F224 /* TimerViewController.h */,
@@ -236,7 +231,6 @@
 			files = (
 				27D425C51B0128C10099F224 /* TimerViewController.m in Sources */,
 				27D425C91B01290C0099F224 /* RoundsViewController.m in Sources */,
-				27D425A21B0127AE0099F224 /* ViewController.m in Sources */,
 				27D426041B0154690099F224 /* Timer.m in Sources */,
 				27D4259F1B0127AE0099F224 /* AppDelegate.m in Sources */,
 				27D4259C1B0127AE0099F224 /* main.m in Sources */,

@@ -17,14 +17,18 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dusk" translatesAutoresizingMaskIntoConstraints="NO" id="XHQ-JM-okh">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyW-mh-KY4">
                     <rect key="frame" x="204" y="348" width="192" height="72"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="72" id="S6c-9o-AHX"/>
                         <constraint firstAttribute="width" constant="192" id="fDW-rn-Rr8"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                     <state key="normal" title="Start Timer">
+                        <color key="titleColor" red="0.723514184" green="1" blue="0.66020347850000005" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -37,8 +41,9 @@
                         <constraint firstAttribute="width" constant="171" id="1nR-yq-Is8"/>
                         <constraint firstAttribute="height" constant="70" id="WmZ-Z6-Kxr"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                     <state key="normal" title="Pause">
+                        <color key="titleColor" red="1" green="0.10028221399999999" blue="0.2328962966" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -51,20 +56,27 @@
                         <constraint firstAttribute="height" constant="72" id="7Dk-dW-hiz"/>
                         <constraint firstAttribute="width" constant="176" id="FmT-O1-Svh"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="47"/>
+                    <color key="textColor" red="1" green="0.92733311259999995" blue="0.358075066" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="qyW-mh-KY4" secondAttribute="bottom" constant="180" id="9dV-D7-bpz"/>
+                <constraint firstItem="XHQ-JM-okh" firstAttribute="centerX" secondItem="mwW-fS-QcK" secondAttribute="centerX" id="JST-eb-hcH"/>
                 <constraint firstAttribute="bottom" secondItem="mwW-fS-QcK" secondAttribute="bottom" constant="123" id="aJx-3J-GI5"/>
                 <constraint firstItem="mwW-fS-QcK" firstAttribute="centerX" secondItem="qyW-mh-KY4" secondAttribute="centerX" id="jH8-VE-uKh"/>
                 <constraint firstItem="qyW-mh-KY4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lb3-oh-ud5"/>
+                <constraint firstItem="XHQ-JM-okh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="m5Z-dm-9Mz"/>
+                <constraint firstAttribute="bottom" secondItem="XHQ-JM-okh" secondAttribute="bottom" id="umF-t5-OGK"/>
                 <constraint firstItem="iff-HQ-VYk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="155" id="zGE-vO-8h4"/>
                 <constraint firstItem="iff-HQ-VYk" firstAttribute="leading" secondItem="mwW-fS-QcK" secondAttribute="leading" id="zfP-T9-ao5"/>
+                <constraint firstItem="XHQ-JM-okh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zvn-Iq-UD8"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="dusk" width="640" height="1136"/>
+    </resources>
 </document>

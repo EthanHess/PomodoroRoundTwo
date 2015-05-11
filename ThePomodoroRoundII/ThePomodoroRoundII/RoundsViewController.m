@@ -44,6 +44,11 @@
     return self.roundTimes = @[@25,@5,@25,@5,@25,@15];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 80;
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     return [self roundTimes].count;
@@ -54,6 +59,9 @@
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     
     cell.textLabel.text = [NSString stringWithFormat:@"%@ Minutes", [self roundTimes][indexPath.row]];
+    cell.textLabel.font = [UIFont fontWithName:@"Chalkduster" size:24];
+    cell.textLabel.textColor = [UIColor colorWithRed:(243.0/255.0) green:(235.0/255.0) blue:(20.0/255.0) alpha:1.0];
+    cell.backgroundColor = [UIColor colorWithRed:(152.0/255.0) green:(10.0/255.0) blue:(13.0/255.0) alpha:1.0];
     
     return cell;
     

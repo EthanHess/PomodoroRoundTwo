@@ -41,6 +41,7 @@
     
     self.timer.minutes = 25;
     [self updateTimerLabel];
+
     
 }
 
@@ -61,7 +62,7 @@
 
 - (IBAction)pauseTimer:(id)sender {
     
-    self.startButton.enabled = NO;
+    self.startButton.enabled = YES;
     
     [[Timer sharedInstance] pauseTimer:sender];
     
