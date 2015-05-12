@@ -35,6 +35,12 @@
 
 - (void)roundComplete {
     
+    if (self.currentRound != [self roundTimes].count - 1) {
+        
+        self.currentRound ++;
+    }
+    
+    [self tableView:self.tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:self.currentRound inSection:0]];
     
     
 }
