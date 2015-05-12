@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "TimerViewController.h"
 #import "RoundsViewController.h"
+#import "AppearanceController.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +28,8 @@
     RoundsViewController *roundsVC = [[RoundsViewController alloc] init];
     UINavigationController *roundsNavVC = [[UINavigationController alloc]initWithRootViewController:roundsVC];
     roundsNavVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Rounds" image:[UIImage imageNamed:@"rounds"] tag:1];
+    
+    [AppearanceController setUpAppearance];
     
     //Create tab bar controller and add view controllers to it
     

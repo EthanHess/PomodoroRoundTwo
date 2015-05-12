@@ -25,6 +25,7 @@
     self.tableView = [[UITableView alloc]initWithFrame:self.view.frame];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.backgroundColor = [UIColor colorWithRed:38/255.0f green:211/255.0f blue:246/255.0f alpha:1.0f];
     [self.view addSubview:self.tableView];
     
     self.currentRound = 0;

@@ -16,6 +16,7 @@
 		27D425C61B0128C10099F224 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27D425C41B0128C10099F224 /* TimerViewController.xib */; };
 		27D425C91B01290C0099F224 /* RoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D425C81B01290C0099F224 /* RoundsViewController.m */; };
 		27D426041B0154690099F224 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D426031B0154690099F224 /* Timer.m */; };
+		27D426711B026D3F0099F224 /* AppearanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D426701B026D3F0099F224 /* AppearanceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		27D425C81B01290C0099F224 /* RoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundsViewController.m; sourceTree = "<group>"; };
 		27D426021B0154690099F224 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
 		27D426031B0154690099F224 /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
+		27D4266F1B026D3F0099F224 /* AppearanceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearanceController.h; sourceTree = "<group>"; };
+		27D426701B026D3F0099F224 /* AppearanceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearanceController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 			children = (
 				27D4259D1B0127AE0099F224 /* AppDelegate.h */,
 				27D4259E1B0127AE0099F224 /* AppDelegate.m */,
+				27D4266F1B026D3F0099F224 /* AppearanceController.h */,
+				27D426701B026D3F0099F224 /* AppearanceController.m */,
 				27D425C71B01290C0099F224 /* RoundsViewController.h */,
 				27D425C81B01290C0099F224 /* RoundsViewController.m */,
 				27D425C21B0128C10099F224 /* TimerViewController.h */,
@@ -230,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27D425C51B0128C10099F224 /* TimerViewController.m in Sources */,
+				27D426711B026D3F0099F224 /* AppearanceController.m in Sources */,
 				27D425C91B01290C0099F224 /* RoundsViewController.m in Sources */,
 				27D426041B0154690099F224 /* Timer.m in Sources */,
 				27D4259F1B0127AE0099F224 /* AppDelegate.m in Sources */,
