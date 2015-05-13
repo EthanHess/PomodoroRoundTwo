@@ -59,11 +59,35 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+    if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+        //iOS 8
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound) categories:nil]];
+    }
+    
+    else
+    { //iOS 7 or below
+        
+//        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound) categories:nil]];
+    }
+    
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    
+    UIAlertController *notificationAlert = [UIAlertController alertControllerWithTitle:@" Time's up! " message:notification.alertBody preferredStyle:UIAlertControllerStyleAlert];
+    
+    [notificationAlert addAction:[UIAlertAction actionWithTitle:@"Okay!" style:UIAlertActionStyleDefault handler:nil]];
+    
+    [self.window.rootViewController presentViewController:notificationAlert animated:YES completion:nil];
+    
+    
 }
 
 @end
